@@ -3,7 +3,6 @@ import "./styles/Contact.css";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import TS4img from "../asserts/TS4img.png";
-import CS1img from "../asserts/section1-logo.png";
 
 const Contact = () => {
   return (
@@ -15,10 +14,6 @@ const Contact = () => {
             <div className="CS1-left">
               <p className="CS1text1">Contact us to get started</p>
             </div>
-
-            {/* <div className="CS1-right">
-              <img src={CS1img} alt="CS1img" />
-            </div> */}
           </div>
         </div>
         <div className="CS2-container">
