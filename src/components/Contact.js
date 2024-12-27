@@ -3,8 +3,15 @@ import "./styles/Contact.css";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import TS4img from "../asserts/TS4img.png";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
+  const navigate = useNavigate();
+
+  const handleNavigation = () => {
+    navigate("/contact");
+    window.scrollTo(0, 0);
+  };
   return (
     <div>
       <Navbar />
@@ -105,7 +112,9 @@ const Contact = () => {
                 and explainable Al-powered solutions and products. Request a
                 demo with a member of our friendly team.
               </p>
-              <button className="book-a-demo2">Book a demo</button>
+              <button className="book-a-demo2" onClick={handleNavigation}>
+                Book a demo
+              </button>
             </div>
             <div className="CS3-right">
               <img src={TS4img} alt="TS4img" />

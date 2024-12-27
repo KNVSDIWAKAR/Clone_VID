@@ -52,7 +52,7 @@
 .section3 {
   width: 100%;
   position: relative;
-  background-image: url("E:\provenio.ai_clone\my-app\src\asserts\section1-logo.png");
+  background-image: url("../../asserts/section1-logo.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

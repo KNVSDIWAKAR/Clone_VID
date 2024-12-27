@@ -37,24 +37,34 @@ const Footer = () => {
               <ul className="footer-links">
                 <li>
                   <img src={homelogo} alt="Home Logo" />
-                  <a href="#home">Home</a>
+                  <a href="#home">
+                    <Link to="/" onClick={() => window.scrollTo(0, 0)}>
+                      Home
+                    </Link>
+                  </a>
                 </li>
                 <li>
                   <img src={homelogo} alt="Home Logo" />
                   <a href="#fraitey">
-                    <Link to="/fraitey">Fraitey</Link>
+                    <Link to="/fraitey" onClick={() => window.scrollTo(0, 0)}>
+                      TSO
+                    </Link>
                   </a>
                 </li>
                 <li>
                   <img src={homelogo} alt="Home Logo" />
                   <a href="#trepo">
-                    <Link to="/trepo">TrePo</Link>
+                    <Link to="/trepo" onClick={() => window.scrollTo(0, 0)}>
+                      DSO
+                    </Link>
                   </a>
                 </li>
                 <li>
                   <img src={homelogo} alt="Home Logo" />
                   <a href="#book-demo">
-                    <Link to="/contact">Book a demo</Link>
+                    <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>
+                      Book a demo
+                    </Link>
                   </a>
                 </li>
               </ul>

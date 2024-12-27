@@ -36,6 +36,7 @@ const Home = () => {
 
   const handleNavigation = () => {
     navigate("/contact");
+    window.scrollTo(0, 0);
   };
   return (
     <div>
