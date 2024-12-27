@@ -1,0 +1,146 @@
+.section1 {
+  background-color: #e4ecff;
+  width: 100%;
+}
+
+.section1-container {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 6%;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+.section1-logo img {
+  width: auto;
+  height: 75vh;
+}
+.section1-text {
+  width: auto;
+}
+.section1-text {
+  color: #0e215a;
+  font-family: "Proximo Nova Regular", Sans-serif;
+  justify-content: center;
+  font-size: 36px;
+}
+
+.section2 {
+  background-color: #7fafef;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.section2-container {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 6%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.section2-text {
+  align-items: center;
+  color: #ffffff;
+  font-family: "Nexa Regular", Sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+}
+.section3 {
+  width: 100%;
+  position: relative;
+  background-image: url("E:\provenio.ai_clone\my-app\src\asserts\section1-logo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+}
+
+.section3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+}
+
+.section3-container {
+  position: relative;
+
+  display: flex;
+  gap: 150px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 6%;
+
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.section3-left,
+.section3-right {
+  width: 100%;
+}
+
+.section3logo img {
+  width: auto;
+  height: auto;
+}
+
+.section3-text {
+  font-size: 20px;
+  font-family: "Nexa Regular", Sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.section4 {
+  background-color: #003fa9;
+}
+.section4-container {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  gap: 30px;
+}
+.section4-text {
+  font-size: 25px;
+  color: #ffffff;
+}
+.section4-text1 {
+  font-size: 25px;
+  color: #62c4f9;
+}
+@media screen and (max-width: 1024px) {
+  .section1-container,
+  .section2-container,
+  .section3-container,
+  .section4-container {
+    margin: 0%;
+  }
+}
+@media screen and (max-width: 765px) {
+  .section1-container,
+  .section3-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section3logo img,
+  .section1-logo img {
+    width: 100%;
+    height: auto;
+  }
+}

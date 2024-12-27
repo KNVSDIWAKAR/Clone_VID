@@ -1,0 +1,151 @@
+.footer-container {
+  background-color: #0e215c;
+  color: white;
+  padding: 3% 0;
+}
+.footer {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+li img {
+  width: auto;
+  height: 2vh;
+}
+li {
+  display: flex;
+  gap: 10%;
+  padding: 6%;
+}
+.SH1 {
+  width: 30%;
+}
+
+a {
+  font-size: 16px;
+}
+.footer-content {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: left;
+}
+
+.footer-logo img {
+  height: 10vh;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.footer-description {
+  font-size: 16px;
+  max-width: 80%;
+  color: #ffff;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.footer-links li {
+  font-size: 16px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #0060df;
+}
+
+.footer-section a {
+  color: #b0c4de;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #0060df; /* Hover color */
+}
+
+.footer-bottom {
+  display: flex;
+  margin-top: 20px;
+  color: #b0c4de;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.SH {
+  width: 30%;
+}
+.footer-bottom a {
+  text-decoration: none;
+  color: #b0c4de;
+  transition: color 0.3s ease;
+}
+.FH1 {
+  font-size: 25px;
+}
+
+.footer-bottom a:hover {
+  color: #0060df;
+}
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+.linkedin-logo {
+  width: 30px;
+  height: 30px;
+}
+.SH2 {
+  display: flex;
+  width: 100%;
+}
+
+@media screen and (min-width: 765px) and (max-width: 1024px) {
+  .SH2 {
+    display: block;
+  }
+  .footer-bottom {
+    display: block;
+    justify-items: center;
+  }
+  /* .footer {
+    margin: 0%;
+  } */
+}
+
+@media screen and (max-width: 765px) {
+  .SH2 {
+    display: block;
+  }
+  .footer-content {
+    display: block;
+  }
+  .footer-bottom {
+    display: block;
+    justify-items: center;
+  }
+  /* .footer {
+    margin: 0%;
+  } */
+}

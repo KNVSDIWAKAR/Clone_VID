@@ -1,0 +1,181 @@
+.CS1-container {
+  background-color: #0c215c;
+  width: 100%;
+}
+.CS1 {
+  width: 100%;
+  display: flex;
+  color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  justify-content: space-between;
+}
+.CS1text1 {
+  font-size: 48px;
+  max-width: 60%;
+}
+/* .CS1-right {
+  width: 50%;
+  float: right;
+}
+
+/* .CS1-right img { */
+/* margin-left: 20%;
+  position: fixed;
+  width: auto;
+  height: 50vh;
+  overflow: hidden;
+} */
+.CS3 {
+  display: flex;
+  width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
+.CS3-left {
+  color: #fff;
+  width: 30%;
+  background-color: #003fa9;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 6%;
+}
+.CS3-right {
+  width: 40%;
+}
+.CS3-right img {
+  width: auto;
+  height: 70vh;
+}
+.TS6text1 {
+  font-size: 32px;
+  max-width: 60%;
+}
+.TS6text2 {
+  font-size: 18px;
+  max-width: 80%;
+}
+.book-a-demo2 {
+  font-family: "Proxima Nova", Sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22.4px;
+  background-image: linear-gradient(90deg, #2b6ed9 0%, #56cffe 100%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 13px 23px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+.CS2 {
+  display: flex;
+  width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  justify-content: center;
+  align-items: center;
+}
+
+.CS2-left {
+  width: 40%;
+  line-height: 1.8;
+}
+.CS2text1 {
+  font-size: 34px;
+  max-width: 50%;
+}
+.CS2text2 {
+  font-size: 22px;
+  max-width: 50%;
+}
+
+.CS2-right {
+  width: 40%;
+}
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  flex: 1 1 calc(50% - 1rem);
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact-form textarea {
+  flex: 1 1 100%;
+  height: 100px;
+}
+
+.checkbox-group {
+  flex: 1 1 100%;
+}
+
+.checkbox-group p {
+  margin-bottom: 0.5rem;
+}
+
+.submit-btn {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book-a-demo2:hover {
+  background-image: linear-gradient(90deg, #56cffe 0%, #2b6ed9 100%);
+}
+@media screen and (max-width: 1024px) {
+  .CS1,
+  .CS2,
+  .CS3 {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .CS1 {
+    align-items: center;
+    justify-content: center;
+  }
+  .CS2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 765px) {
+  .CS1,
+  .CS2,
+  .CS3 {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .CS3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .CS3-left {
+    width: 100%;
+  }
+  .CS3-right {
+    width: auto;
+  }
+}
