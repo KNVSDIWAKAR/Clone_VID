@@ -1,7 +1,7 @@
 import React from "react";
 import "../components/styles/Footer.css";
 import homelogo from "../asserts/section1-logo.png";
-import homelogo1 from "../asserts/Footer-logo.png";
+import homelogo1 from "../asserts/homelogo1.png";
 import { Link } from "react-router-dom";
 
 import linkedinLogo from "../asserts/linkedin-logo.png";
