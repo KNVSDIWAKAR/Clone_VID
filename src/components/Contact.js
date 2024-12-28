@@ -15,7 +15,7 @@ const Contact = () => {
   return (
     <div>
       <Navbar />
-      <div>
+      <div className="Contact-container">
         <div className="CS1-container">
           <div className="CS1">
             <div className="CS1-left">
