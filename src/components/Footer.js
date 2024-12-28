@@ -91,7 +91,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          <p className="TH2">© 2024 - ProvenioAI | All Rights Reserved</p>
+          <p className="TH2">© 2024 - Vidrona | All Rights Reserved</p>
           <p className="TH2">
             <a href="#terms">Terms and Conditions</a> ||{" "}
             <a href="#privacy">Privacy Policy</a>
