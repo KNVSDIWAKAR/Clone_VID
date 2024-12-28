@@ -35,17 +35,17 @@ const Navbar = () => {
               Transmission (TSO)
             </Link>
           </li>
-          <li>
+          <li className="NV1">
             <Link to="/trepo" onClick={() => window.scrollTo(0, 0)}>
               Distribution (DSO)
             </Link>
           </li>
-          <li>
+          <li className="NV1">
             <Link to="/about" onClick={() => window.scrollTo(0, 0)}>
               About
             </Link>
           </li>
-          <li>
+          <li className="NV1">
             <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>
               Contact Us
             </Link>

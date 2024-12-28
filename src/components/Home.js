@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "./styles/Home.css";
@@ -31,8 +31,44 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { useNavigate } from "react-router-dom";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 const Home = () => {
+  const logos = [clogo1, clogo2, clogo3, clogo4, clogo5, clogo6];
+  const [isMobile, setIsMobile] = useState(false);
   const navigate = useNavigate();
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 765);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  const CustomPrevArrow = ({ onClick }) => {
+    return (
+      <div className="custom-arrow custom-prev" onClick={onClick}>
+        {"<"}
+      </div>
+    );
+  };
+
+  const CustomNextArrow = ({ onClick }) => {
+    return (
+      <div className="custom-arrow custom-next" onClick={onClick}>
+        {">"}
+      </div>
+    );
+  };
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: <CustomPrevArrow />,
+    nextArrow: <CustomNextArrow />,
+  };
 
   const handleNavigation = () => {
     navigate("/contact");
@@ -52,7 +88,7 @@ const Home = () => {
                 Increasing the speed, accuracy, and efficiency of Order-to-Cash
                 and Procure-to-Pay processes across supply chain logistics.
               </p>
-              <div className="">
+              <div className="HS1B">
                 <button className="HS1button1" onClick={handleNavigation}>
                   Find out more
                 </button>
@@ -76,27 +112,36 @@ const Home = () => {
             <p className="HS2text1">
               Leading Australian companies we work with
             </p>
-            <div className="HS2companylogoconatiner">
-              <div className="HS2logo">
-                <img src={clogo1} alt="clogo1" />
-              </div>
-              <div className="HS2logo">
-                <img src={clogo2} alt="clogo2" />
-              </div>
-              <div className="HS2logo">
-                <img src={clogo3} alt="clogo3" />
-              </div>
-              <div className="HS2logo">
-                <img src={clogo4} alt="clogo4" />
-              </div>
-              <div className="HS2logo">
-                <img src={clogo5} alt="clogo5" />
-              </div>
-              <div className="HS2logo">
-                <img src={clogo6} alt="clogo6" />
-              </div>
+
+            <div className="HS2CLOGO">
+              {isMobile ? (
+                <Slider {...settings}>
+                  {logos.map((logo, index) => (
+                    <div key={index} className="HS2logo">
+                      <img src={logo} alt={`Logo ${index + 1}`} />
+                    </div>
+                  ))}
+                </Slider>
+              ) : (
+                <div className="HS2companylogoconatiner">
+                  {logos.map((logo, index) => (
+                    <div key={index} className="HS2logo">
+                      <img src={logo} alt={`Logo ${index + 1}`} />
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
+        </div>
+        <div className="HS3-Special">
+          <p className="HSEtext1">Supercharge back-office efficiency</p>
+          <p className="HSEtext2">
+            "provenioai has enabled us to modernise our financial and supply
+            chain processes — providing greater productivity, speed and
+            transparency."
+          </p>
+          <p className="HSEtext2"> CTO, FMCG</p>
         </div>
         <div className="HS3-container">
           <div className="HS3">
@@ -251,50 +296,56 @@ const Home = () => {
               policies and protocols.
             </p>
             <div className="HS10logoandtext">
-              <div className="HS10C">
-                <img src={HS10img1} alt="HS10img1" />
-                <div className="separator"></div>
-                <p className="HS10text4">All data secured within Country</p>
+              <div className="C3">
+                <div className="HS10C">
+                  <img src={HS10img1} alt="HS10img1" />
+                  <div className="separator"></div>
+                  <p className="HS10text4">All data secured within Country</p>
+                </div>
+
+                <div className="HS10C">
+                  <img src={HS10img2} alt="HS10img2" />
+                  <div className="separator"></div>
+                  <p className="HS10text4">
+                    End-to-End Data Encryption while at rest and motion
+                  </p>
+                </div>
               </div>
 
-              <div className="HS10C">
-                <img src={HS10img2} alt="HS10img2" />
-                <div className="separator"></div>
-                <p className="HS10text4">
-                  End-to-End Data Encryption while at rest and motion
-                </p>
+              <div className="C3">
+                <div className="HS10C">
+                  <img src={HS10img3} alt="HS10img3" />
+                  <div className="separator"></div>
+                  <p className="HS10text4">
+                    Enhanced Vulnerability Protection a Compliance Management
+                  </p>
+                </div>
+
+                <div className="HS10C">
+                  <img src={HS10img4} alt="HS10img4" />
+                  <div className="separator"></div>
+                  <p className="HS10text4">
+                    Access Management and Role Based Control for Users
+                  </p>
+                </div>
               </div>
 
-              <div className="HS10C">
-                <img src={HS10img3} alt="HS10img3" />
-                <div className="separator"></div>
-                <p className="HS10text4">
-                  Enhanced Vulnerability Protection a Compliance Management
-                </p>
-              </div>
+              <div className="C3">
+                <div className="HS10C">
+                  <img src={HS10img5} alt="HS10img5" />
+                  <div className="separator"></div>
+                  <p className="HS10text4">
+                    Authentication methods such as 2FA and SSO
+                  </p>
+                </div>
 
-              <div className="HS10C">
-                <img src={HS10img4} alt="HS10img4" />
-                <div className="separator"></div>
-                <p className="HS10text4">
-                  Access Management and Role Based Control for Users
-                </p>
-              </div>
-
-              <div className="HS10C">
-                <img src={HS10img5} alt="HS10img5" />
-                <div className="separator"></div>
-                <p className="HS10text4">
-                  Authentication methods such as 2FA and SSO
-                </p>
-              </div>
-
-              <div className="HS10C">
-                <img src={HS10img6} alt="HS10img6" />
-                <div className="separator"></div>
-                <p className="HS10text4">
-                  Full Traceability and AI explainability
-                </p>
+                <div className="HS10C">
+                  <img src={HS10img6} alt="HS10img6" />
+                  <div className="separator"></div>
+                  <p className="HS10text4">
+                    Full Traceability and AI explainability
+                  </p>
+                </div>
               </div>
             </div>
           </div>

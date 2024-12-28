@@ -1,6 +1,6 @@
 import React from "react";
 import "../components/styles/Footer.css";
-import homelogo from "../asserts/section1-logo.png";
+import homelogo from "../asserts/play.svg";
 import homelogo1 from "../asserts/homelogo1.png";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
@@ -88,11 +88,10 @@ const Footer = () => {
             </div>
             <div className="SH1">
               <p className="FH1">Address</p>
-              {/* G10 Atlas Building European Space Agency: BIC Campus, Fermi Avenue, Harwell, Didcot OX11  0QX,UK */}
-              <p>G10 Atlas Building European Space Agency:</p>
-              <p>BIC Campus, </p>
-              <p>Fermi Avenue, Harwell, Didcot</p>
-              <p>OX11 0QX,UK</p>
+              <p className="FH2">G10 Atlas Building European Space Agency:</p>
+              <p className="FH2">BIC Campus, </p>
+              <p className="FH2">Fermi Avenue, Harwell, Didcot</p>
+              <p className="FH2">OX11 0QX,UK</p>
             </div>
           </div>
         </div>
