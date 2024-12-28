@@ -3,14 +3,20 @@ import "../components/styles/Footer.css";
 import homelogo from "../asserts/section1-logo.png";
 import homelogo1 from "../asserts/homelogo1.png";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import linkedinLogo from "../asserts/linkedin-logo.png";
 const Footer = () => {
+  const navigate = useNavigate();
+  const handleNavigation1 = () => {
+    navigate("/");
+    window.scrollTo(0, 0);
+  };
   return (
     <footer className="footer-container">
       <div className="footer">
         <div className="footer-logo">
-          <img src={homelogo1} alt="Home Logo" />
+          <img src={homelogo1} alt="Home Logo" onClick={handleNavigation1} />
         </div>
         <div className="SH2">
           <div className="SH">
