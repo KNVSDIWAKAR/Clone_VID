@@ -2,7 +2,8 @@ import React from "react";
 import "./styles/Contact.css";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import TS4img from "../asserts/TS4img.png";
+import TS4img from "../asserts/CS3img.png";
+import CSimg from "../asserts/section1-logo.png";
 import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
@@ -16,58 +17,69 @@ const Contact = () => {
     <div>
       <Navbar />
       <div className="Contact-container">
-        <div className="CS1-container">
-          <div className="CS1">
-            <div className="CS1-left">
-              <p className="CS1text1">Contact us to get started</p>
+        <div className="DS">
+          <div className="CS1-container">
+            <div className="CS1">
+              <div className="CS1-left">
+                <p className="CS1text1">Contact us to get started</p>
+              </div>
+              <div className="CS1-right">
+                <img src={CSimg} />
+              </div>
             </div>
           </div>
         </div>
         <div className="CS2-container">
           <div className="CS2">
             <div className="CS2-left">
-              <p className="CS2text1">Get in touch, fill out the form:</p>
+              <p className="CS2text1">Get in touch,</p>
+              <p className="CS2text1">fill out the form:</p>
+
               <p className="CS2text2">
-                Or alternatively, you can reach us here:
+                Or alternatively, you can
+                <br></br>reach us here:
                 <br />
-                <a href="mailto:@aividrona.com">@aividrona.com</a>
+                <span className="utext1"> info@aividrona.com</span>
               </p>
-              <p className="CS2text2">
-                Level 17, International Towers 3, Barangaroo Avenue, Barangaroo,
-                Sydney,
+
+              <p className="CS2text3">
+                G10 Atlas Building European Space Agency:
               </p>
-              <p className="CS2text2">2000</p>
-              <p className="CS2text2">02 8667 5398</p>
+              <p className="CS2text3">BIC Campus,</p>
+              <p className="CS2text3">Fermi Avenue, Harwell, Didcot </p>
+              <p className="CS2text3">OX11 0QX,UK</p>
+
+              <p className="CS2text4">+447469231693</p>
             </div>
 
             <div className="CS2-right">
               <form className="contact-form">
-                <div>
+                <div className="L1">
                   <label>First Name *</label>
                   <br></br>
                   <input type="text" placeholder="First Name *" required />
                 </div>
-                <div>
+                <div className="L1">
                   <label>Last Name *</label>
                   <br></br>
                   <input type="text" placeholder="Last Name *" required />
                 </div>
-                <div>
+                <div className="L1">
                   <label>Company *</label>
                   <br></br>
                   <input type="text" placeholder="Company *" required />
                 </div>
-                <div>
+                <div className="L1">
                   <label>Role *</label>
                   <br></br>
                   <input type="text" placeholder="Role *" required />
                 </div>
-                <div>
+                <div className="L1">
                   <label>Business Email *</label>
                   <br></br>
                   <input type="email" placeholder="Business Email *" required />
                 </div>
-                <div>
+                <div className="L1">
                   <label>Phone Number</label>
                   <br></br>
                   <input type="tel" placeholder="Phone Number" />
@@ -112,9 +124,6 @@ const Contact = () => {
                 and explainable Al-powered solutions and products. Request a
                 demo with a member of our friendly team.
               </p>
-              <button className="book-a-demo2" onClick={handleNavigation}>
-                Book a demo
-              </button>
             </div>
             <div className="CS3-right">
               <img src={TS4img} alt="TS4img" />

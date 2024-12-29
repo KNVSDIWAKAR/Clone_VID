@@ -131,7 +131,45 @@
   .section2-container,
   .section3-container,
   .section4-container {
-    margin: 0%;
+    margin: 0% 4%;
+  }
+
+  .section1-logo img {
+    width: auto;
+    height: 50vh;
+  }
+  .section1-text {
+    width: auto;
+  }
+  .section1-text {
+    font-size: 24px;
+  }
+
+  .section3-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .section3-left {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .section3-left,
+  .section3-right {
+    width: 100%;
+  }
+
+  .section3logo img {
+    width: auto;
+    height: auto;
+  }
+
+  .section3-text {
+    font-size: 18px;
+    font-family: "Nexa Regular", Sans-serif;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (max-width: 765px) {

@@ -79,10 +79,10 @@ const Footer = () => {
               <p className="FH1">Contact</p>
               <ul className="footer-links">
                 <li>
-                  <a href="#">@aividrona.com</a>
+                  <a href="#">info@aividrona.com</a>
                 </li>
                 <li>
-                  <a href="#">02 8667 5398</a>
+                  <a href="#">+447469231693</a>
                 </li>
               </ul>
             </div>

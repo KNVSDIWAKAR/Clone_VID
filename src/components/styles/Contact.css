@@ -1,9 +1,15 @@
 .Contact-container {
   font-family: "Proxima Nova", Sans-serif;
 }
-.CS1-container {
+.DS {
   background-color: #0c215c;
   width: 100%;
+  font-family: "Proxima Nova", Sans-serif;
+  height: 80vh;
+}
+.CS1-container {
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .CS1 {
   width: 100%;
@@ -17,53 +23,19 @@
 }
 .CS1text1 {
   font-size: 48px;
-  max-width: 60%;
-}
-/* .CS1-right {
-  width: 50%;
-  float: right;
-}
-
-/* .CS1-right img { */
-/* margin-left: 20%;
-  position: fixed;
-  width: auto;
-  height: 50vh;
-  overflow: hidden;
-} */
-.CS3 {
-  display: flex;
-  width: 100%;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding-top: 6%;
-  padding-bottom: 6%;
-}
-.CS3-left {
-  color: #fff;
-  width: 30%;
-  background-color: #003fa9;
-  border-radius: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  padding: 6%;
-}
-.CS3-right {
-  width: 40%;
-}
-.CS3-right img {
-  width: auto;
-  height: 70vh;
-}
-.TS6text1 {
-  font-size: 32px;
-  max-width: 60%;
-}
-.TS6text2 {
-  font-size: 18px;
   max-width: 80%;
 }
+.CS1-right {
+  width: 100%;
+}
+.CS1-right img {
+  margin-left: 20%;
+  justify-content: end;
+  margin-top: 5vh;
+  margin-left: 50%;
+  height: 65vh;
+}
+
 .book-a-demo2 {
   font-family: "Proxima Nova", Sans-serif;
   font-size: 16px;
@@ -82,23 +54,38 @@
   width: 100%;
   margin-left: 10%;
   margin-right: 10%;
-  padding-top: 6%;
+  padding-top: 10%;
   padding-bottom: 6%;
-  justify-content: center;
-  align-items: center;
 }
 
 .CS2-left {
   width: 40%;
-  line-height: 1.8;
+  line-height: 1;
 }
 .CS2text1 {
-  font-size: 34px;
-  max-width: 50%;
+  font-size: 32px;
+  max-width: 100%;
+  margin: 0%;
 }
 .CS2text2 {
+  padding-top: 6%;
   font-size: 22px;
-  max-width: 50%;
+  max-width: 35%;
+  line-height: 1.4;
+}
+.utext1 {
+  text-decoration: underline;
+}
+.CS2text3 {
+  font-size: 20px;
+  max-width: 40%;
+  line-height: 1.3;
+  margin: 0%;
+}
+.CS2text4 {
+  font-size: 20px;
+  max-width: 40%;
+  line-height: 1.3;
 }
 
 .CS2-right {
@@ -107,12 +94,11 @@
 .contact-form {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
-.contact-form input,
-.contact-form textarea {
-  flex: 1 1 calc(50% - 1rem);
+.contact-form input {
+  flex: 1 1 calc(100% - 1rem);
   padding: 0.5rem;
   font-size: 1rem;
   border-radius: 5px;
@@ -120,6 +106,11 @@
 }
 
 .contact-form textarea {
+  flex: 1 1 calc(100% - 1rem);
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
   flex: 1 1 100%;
   height: 100px;
 }
@@ -145,40 +136,219 @@
 .book-a-demo2:hover {
   background-image: linear-gradient(90deg, #56cffe 0%, #2b6ed9 100%);
 }
+
+.CS3-container {
+  width: 100%;
+}
+
+.CS3 {
+  display: flex;
+  width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  align-items: stretch;
+}
+
+.CS3-left {
+  color: #fff;
+  width: 30%;
+  background-color: #003fa9;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 10% 6%;
+  border-radius: 20px 0 0 20px;
+}
+
+.CS3-right {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CS3-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 20px 20px 0;
+}
+
+.TS6text1 {
+  font-size: 32px;
+  max-width: 100%;
+}
+
+.TS6text2 {
+  font-size: 18px;
+  max-width: 100%;
+}
+. CS2sec {
+  display: flex;
+}
+
 @media screen and (max-width: 1024px) {
   .CS1,
   .CS2,
   .CS3 {
-    margin-left: 0%;
-    margin-right: 0%;
+    margin-left: 4%;
+    margin-right: 4%;
   }
   .CS1 {
     align-items: center;
     justify-content: center;
   }
-  .CS2 {
+  .DS {
+    height: 70vh;
+  }
+  .CS1text1 {
+    font-size: 32px;
+    max-width: 80%;
+  }
+  .CS1text2 {
+    padding: 0%;
+    font-size: 24px;
+    width: 100%;
+  }
+
+  .contact-form {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .contact-form label {
+    font-size: 1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .contact-form textarea {
+    height: 150px;
+  }
+
+  .contact-form .checkbox-group {
+    width: 100%;
+  }
+  .contact-form .checkbox-group label {
+  }
+
+  .contact-form .L1 {
+    width: calc(50% - 0.5rem);
   }
 }
 @media screen and (max-width: 765px) {
-  .CS1,
+  .CS1 {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
   .CS2,
   .CS3 {
-    margin-left: 0%;
-    margin-right: 0%;
+    margin-left: 6%;
+    margin-right: 6%;
   }
+  .CS1 {
+    align-items: start;
+  }
+
+  .CS1text1 {
+    align-items: start;
+    padding-top: 40%;
+    font-size: 38px;
+  }
+  .CS1-right {
+    display: none;
+  }
+  .CS2 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  .CS2-left {
+    width: 100%;
+  }
+  .CS2-right {
+    width: 100%;
+  }
+  .CS2text1,
+  .CS2text2,
+  .CS2text3,
+  .CS2text4 {
+    width: 100%;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .L1 input {
+    width: 80%;
+  }
+  .CS3 {
+    width: 95%;
+  }
+  .CS3-left {
+    color: #fff;
+    width: 30%;
+    background-color: #003fa9;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 10% 6%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .CS3-right {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .CS3-right img {
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .TS6text1 {
+    font-size: 32px;
+    max-width: 100%;
+  }
+
+  .TS6text2 {
+    font-size: 18px;
+    max-width: 100%;
+  }
+
   .CS3 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
   }
   .CS3-left {
-    width: 100%;
+    width: auto;
   }
   .CS3-right {
     width: auto;
+  }
+  textarea {
+    width: 80%;
+  }
+  .submit-btn {
+    width: 30%;
   }
 }
