@@ -173,6 +173,9 @@
   }
 }
 @media screen and (max-width: 765px) {
+  .section1-container {
+    padding-top: 20%;
+  }
   .section1-container,
   .section3-container {
     display: flex;
