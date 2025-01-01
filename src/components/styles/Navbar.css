@@ -73,6 +73,10 @@
 }
 
 @media screen and (min-width: 765px) and (max-width: 1024px) {
+  .navbar-container {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
   .navbar-items {
     display: none;
   }
@@ -97,6 +101,10 @@
   /* .Navbar {
     display: none;
   } */
+  .navbar-container {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
   .navbar-items {
     display: none;
   }

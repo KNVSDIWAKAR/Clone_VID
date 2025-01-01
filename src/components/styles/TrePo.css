@@ -310,6 +310,9 @@
   }
 }
 @media screen and (max-width: 765px) {
+  .CS3 {
+    margin: 0 4%;
+  }
   .TS1,
   .TS2 {
     margin: 0 4%;
