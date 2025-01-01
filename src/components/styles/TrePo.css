@@ -247,15 +247,23 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .TS1-container {
-    align-items: center;
-    justify-content: center;
-  }
   .TS1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .TS1-left,
+  .TS1-right {
+    width: 100%;
+  }
+  .TS1-right {
+    text-align: center;
+  }
+  .TS1text1,
+  .TS1text2,
+  .TS1text3 {
+    max-width: 80%;
   }
   .TS2 {
     display: flex;
@@ -278,22 +286,69 @@
     justify-content: center;
     align-items: center;
   }
+  .TS5-left {
+    width: 100%;
+  }
+  .TS5-right {
+    width: 100%;
+  }
+  .TS5text1 {
+    max-width: 100%;
+  }
+
   .TS1,
-  .TS2.TS2-container,
+  .TS2,
   .TS3,
   .TS4,
   .TS5,
   .TS6 {
-    margin-left: 0%;
-    margin-right: 0%;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .CS3 {
+    margin: 0 10%;
   }
 }
 @media screen and (max-width: 765px) {
+  .TS1,
+  .TS2 {
+    margin: 0 4%;
+  }
+  .TS1-right {
+    text-align: start;
+  }
+  .TS2 {
+    width: 100%;
+  }
+  .TS1-right img {
+    width: 90%;
+  }
+  .TS2text1 {
+    font-size: 28px;
+    max-width: 100%;
+    text-align: center;
+  }
   .TS4 {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
+  .TS4-left {
+    width: 100%;
+  }
+  .TS4-right {
+    width: 100%;
+  }
+  .TS4text1 {
+    max-width: 100%;
+  }
+  .TS4text2 {
+    max-width: 90%;
+  }
+
+  .TS4text3 {
+    max-width: 100%;
+  }
+
   .TS6 {
     display: flex;
     flex-direction: column;

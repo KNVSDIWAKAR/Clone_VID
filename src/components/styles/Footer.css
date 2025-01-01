@@ -124,6 +124,16 @@ a {
 }
 
 @media screen and (max-width: 1024px) {
+  .footer-description {
+    max-width: 100%;
+  }
+  .SH {
+    width: 100%;
+  }
+  .footer-content {
+    width: 100%;
+    gap: 20px;
+  }
   .SH2 {
     display: block;
   }

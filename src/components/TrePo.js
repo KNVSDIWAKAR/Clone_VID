@@ -1,11 +1,13 @@
 import React from "react";
 import "../components/styles/TrePo.css";
+import "../components/styles/Contact.css";
 import { motion } from "framer-motion";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import TS1img from "../asserts/TS1img.png";
 import TS4img from "../asserts/TS4img.png";
 import TS5img from "../asserts/TS5img.png";
+import TS6img from "../asserts/CS3img.png";
 import { useNavigate } from "react-router-dom";
 const TrePo = () => {
   const navigate = useNavigate();
@@ -122,9 +124,9 @@ const TrePo = () => {
           </div>
         </div>
 
-        <div className="TS6-container">
-          <div className="TS6">
-            <div className="TS6-left">
+        <div className="CS3-container">
+          <div className="CS3">
+            <div className="CS3-left">
               <p className="TS6text1">Take the next step</p>
               <p className="TS6text2">
                 Start transforming your back-office processes with our ethical
@@ -135,8 +137,8 @@ const TrePo = () => {
                 Book a demo
               </button>
             </div>
-            <div className="TS6-right">
-              <img src={TS4img} alt="TS4img" />
+            <div className="CS3-right">
+              <img src={TS6img} alt="TS4img" />
             </div>
           </div>
         </div>

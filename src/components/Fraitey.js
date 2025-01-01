@@ -35,9 +35,9 @@ const Fraitey = () => {
               <p className="FS1">TSO</p>
               <p className="FS2">Complex freight validation, made easy,</p>
               <p className="FS3">
-                Your people, spreadsheets, documents and emails all cover <br />{" "}
-                the gaps in your P2P and 02C processes and systems,
-                <br /> costing you time and money.
+                Your people, spreadsheets, documents and emails all cover the
+                gaps in your P2P and 02C processes and systems, costing you time
+                and money.
               </p>
             </div>
             <div className="F-Section1-Right">
@@ -223,12 +223,25 @@ const Fraitey = () => {
             </div>
           </div>
         </div>
+
         <div className="F-Section4-container">
-          <div className="FS4img1">
-            <img src={FS4img1} alt="F-Section4-image1" />
+          <div className="Special-Section4">
+            <p className="SPFS4-text1">
+              "Fraitey does all the heavy lifting to ensure we are paying the
+              correct rates across our supply chain network..."
+            </p>
+            <p className="SPFS4-text2">HEAD OF SUPPLY CHAIN LOGISTICS. FMCG</p>
+            <div className="FS4img2">
+              <img src={FS4img2} alt="F-Section4-image2" />
+            </div>
           </div>
-          <div className="FS4img2">
-            <img src={FS4img2} alt="F-Section4-image2" />
+          <div className="SPD">
+            <div className="FS4img1">
+              <img src={FS4img1} alt="F-Section4-image1" />
+            </div>
+            <div className="FS4img2">
+              <img src={FS4img2} alt="F-Section4-image2" />
+            </div>
           </div>
         </div>
         <div className="F-Section5-container">

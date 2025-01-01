@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/Contact.css";
+import "../components/styles/Contact.css";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import TS4img from "../asserts/CS3img.png";
