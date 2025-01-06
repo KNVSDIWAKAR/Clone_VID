@@ -286,10 +286,31 @@ const Home = () => {
           <div className="HS10">
             <p className="HS10text1">Security & Standards</p>
             <p className="HS10text2">
-              provenioai is hosted on Amazon Web Services (AWS) ensuring our
-              customers benefit from region-specific regulatory hosting,
-              in-country data availability and security standards, including ISO
-              27001.
+              This privacy policy outlines how Vidrona processes and protects
+              personal data in compliance with the Data Protection Act 2018 and
+              General Data Protection Regulation (GDPR)14. Information We
+              Collect Vidrona may collect the following types of personal
+              information: First name Last name Email address IP address
+              Location data Browsing activity Contact information13 Legal Basis
+              for Data Processing We process personal data under the following
+              legal bases: Consent Legitimate Interests Legal Obligation1 Data
+              Usage and Sharing Purpose of Data Collection Website functionality
+              User communication Service improvement Analytics Potential
+              third-party advertising4 User Rights Users have the right to:
+              Access their personal information Request data removal Understand
+              how their data is used Lodge complaints about data handling12
+              <span className="Privacy_contact">
+                <br></br>Contact Information Vidrona Ltd
+                <br></br>UK Address: G10 Atlas Building <br></br>European Space
+                Agency: BIC Campus,<br></br> Fermi Avenue, Harwell, <br></br>
+                Didcot OX11 0QX, UK <br></br>Email: Ashutosh@aividrona.com{" "}
+                <br></br>
+                Phone:+44 7469 231693 <br></br>
+              </span>
+              Data Protection Commitment We are committed to protecting user
+              privacy and ensuring transparent data handling practices. Our
+              policy is designed to provide clear information about how we
+              collect, use, and safeguard personal information
             </p>
             <p className="HS10text3">
               We follow strict security, data encryption and data storage
