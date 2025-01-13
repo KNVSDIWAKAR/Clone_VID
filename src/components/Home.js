@@ -3,12 +3,24 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "./styles/Home.css";
 import HS1img from "../asserts/F-Section1-image.png";
-import clogo1 from "../asserts/clogo1.png";
-import clogo2 from "../asserts/clogo2.png";
-import clogo3 from "../asserts/clogo3.png";
-import clogo4 from "../asserts/clogo4.png";
-import clogo5 from "../asserts/clogo5.png";
-import clogo6 from "../asserts/clogo6.png";
+// import clogo1 from "../asserts/clogo1.png";
+// import clogo2 from "../asserts/clogo2.png";
+// import clogo3 from "../asserts/clogo3.png";
+// import clogo4 from "../asserts/clogo4.png";
+// import clogo5 from "../asserts/clogo5.png";
+// import clogo6 from "../asserts/clogo6.png";
+import companylogo1 from "../asserts/companylogo1.png";
+import companylogo2 from "../asserts/companylogo2.png";
+import companylogo3 from "../asserts/companylogo3.png";
+import companylogo4 from "../asserts/companylogo4.png";
+import companylogo5 from "../asserts/companylogo5.png";
+import companylogo6 from "../asserts/companylogo6.png";
+import companylogo7 from "../asserts/companylogo7.png";
+import companylogo8 from "../asserts/companylogo8.png";
+import companylogo9 from "../asserts/companylogo9.png";
+import companylogo10 from "../asserts/companylogo10.png";
+import companylogo11 from "../asserts/companylogo11.png";
+
 import HS3img1 from "../asserts/HS3img1.png";
 import HS3img2 from "../asserts/HS3img2.png";
 import { motion } from "framer-motion";
@@ -35,7 +47,20 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const Home = () => {
-  const logos = [clogo1, clogo2, clogo3, clogo4, clogo5, clogo6];
+  const logos = [
+    companylogo1,
+    companylogo2,
+    companylogo3,
+    companylogo5,
+    companylogo6,
+  ];
+  const logos1 = [
+    companylogo7,
+    companylogo8,
+    companylogo9,
+    companylogo10,
+    companylogo11,
+  ];
   const [isMobile, setIsMobile] = useState(false);
   const navigate = useNavigate();
   useEffect(() => {
@@ -109,13 +134,14 @@ const Home = () => {
         </div>
         <div className="HS2-container">
           <div className="HS2">
-            <p className="HS2text1">
-              Leading Australian companies we work with
-            </p>
+            <p className="HS2text1">Leading Companies we work with</p>
 
             <div className="HS2CLOGO">
               {isMobile ? (
                 <Slider {...settings}>
+                  <div className="HS2logo HS2logo-large">
+                    <img src={companylogo4} alt="Logo 4" />
+                  </div>
                   {logos.map((logo, index) => (
                     <div key={index} className="HS2logo">
                       <img src={logo} alt={`Logo ${index + 1}`} />
@@ -124,11 +150,23 @@ const Home = () => {
                 </Slider>
               ) : (
                 <div className="HS2companylogoconatiner">
-                  {logos.map((logo, index) => (
-                    <div key={index} className="HS2logo">
-                      <img src={logo} alt={`Logo ${index + 1}`} />
-                    </div>
-                  ))}
+                  <div className="HS2row1">
+                    <img src={companylogo4} alt="Logo 4" />
+                  </div>
+                  <div className="HS2row">
+                    {logos.map((logo, index) => (
+                      <div key={index} className="HS2logo">
+                        <img src={logo} alt={`Logo ${index + 1}`} />
+                      </div>
+                    ))}
+                  </div>
+                  <div className="HS2row">
+                    {logos1.map((logo, index) => (
+                      <div key={index} className="HS2logo">
+                        <img src={logo} alt={`Logo ${index + 1}`} />
+                      </div>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>

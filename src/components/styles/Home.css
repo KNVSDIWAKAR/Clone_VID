@@ -70,7 +70,26 @@
 }
 .HS2companylogoconatiner {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+}
+.HS2row1 {
+  width: 100%;
+}
+.HS2row1 img {
+  width: 100%;
+}
+.HS2row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.HS2logo {
+  width: 100%;
+}
+.HS2logo img {
+  max-width: 100%;
   align-items: center;
 }
 .HS2text1 {
