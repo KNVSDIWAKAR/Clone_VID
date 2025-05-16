@@ -27,7 +27,8 @@ import { motion } from "framer-motion";
 import HS4img1 from "../asserts/HS4img1.png";
 import HS4img2 from "../asserts/HS4img2.png";
 import HS4img3 from "../asserts/HS4img3.png";
-import HS6img from "../asserts/section1-logo.png";
+import HS6img from "../asserts/homelogo1.png";
+// import HS6img from "../asserts/section1-logo.png";
 import HS8img1 from "../asserts/HS8img1.png";
 import HS8img2 from "../asserts/HS8img2.png";
 import HS8img3 from "../asserts/HS8img3.png";
@@ -175,9 +176,8 @@ const Home = () => {
         <div className="HS3-Special">
           <p className="HSEtext1">Supercharge back-office efficiency</p>
           <p className="HSEtext2">
-            "provenioai has enabled us to modernise our financial and supply
-            chain processes — providing greater productivity, speed and
-            transparency."
+            "vidrona has enabled us to modernise our financial and supply chain
+            processes — providing greater productivity, speed and transparency."
           </p>
           <p className="HSEtext2"> CTO, FMCG</p>
         </div>

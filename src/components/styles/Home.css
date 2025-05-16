@@ -81,9 +81,11 @@
   width: 100%;
 }
 .HS2row {
+  margin-top: -10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
 }
 .HS2logo {
   width: 100%;
@@ -131,14 +133,12 @@
 .HS3-img1 img {
   position: relative;
   width: 100%;
-
   z-index: 1;
 }
 .HS3-img2 img {
   position: relative;
   transform: translate(20%, -150%);
   width: 40%;
-
   z-index: 2;
 }
 .HS4 {

@@ -42,7 +42,7 @@ const Navbar = () => {
           </li>
           <li className="NV1">
             <Link to="/about" onClick={() => window.scrollTo(0, 0)}>
-              About
+              About Us
             </Link>
           </li>
           <li className="NV1">

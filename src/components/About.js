@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import Footer from "./Footer";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import "./styles/About.css";
-import section1logo from "../asserts/section1-logo.png";
+import section1logo from "../asserts/homelogo1.png";
 import section3logo from "../asserts/section3-logo.png";
 
 const About = () => {
@@ -60,7 +60,7 @@ const About = () => {
                 <img src={section3logo} alt="section3logo" />
               </div>
               <p className="section3-text">
-                provenioai is a privately owned and operated Australian company
+                vidrona is a privately owned and operated Australian company
                 founded by three entrepreneurs: Dan Pace, Lucas Laxale, and
                 Simon Lupica.
               </p>
@@ -77,7 +77,7 @@ const About = () => {
                 The team swiftly set about adding partners: CEO Bart Heyse, CTO
                 Sriram Bhargav and Head of Product & Delivery Ben Clannachan, to
                 their ranks. Together, they embarked on a journey to create the
-                provenioai platform.
+                vidrona platform.
               </p>
               <p className="section3-text">
                 With pre-and post-pandemic pressure mounting on the supply chain
